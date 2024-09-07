@@ -214,6 +214,7 @@ h1 {
 }
 
 .videos {
+  padding: 15px 25px;
 }
 
 h3 {
@@ -232,40 +233,4 @@ p {
 
 a {
   text-decoration: none;
-}
-
-.container-videos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 4 vídeos por linha */
-  gap: 1rem; /* Diminui o espaço entre os vídeos */
-}
-
-.videos {
-  width: 100%; /* Para garantir que os vídeos se ajustem à largura da coluna */
-  height: auto; /* Ajusta a altura de forma proporcional */
-}
-
-/* Para telas menores, ajuste o número de colunas */
-@media (max-width: 1200px) {
-  .container-videos {
-    grid-template-columns: repeat(
-      3,
-      1fr
-    ); /* 3 vídeos por linha em telas médias */
-  }
-}
-
-@media (max-width: 900px) {
-  .container-videos {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* 2 vídeos por linha em telas menores */
-  }
-}
-
-@media (max-width: 600px) {
-  .container-videos {
-    grid-template-columns: 1fr; /* 1 vídeo por linha em telas muito pequenas */
-  }
 }
