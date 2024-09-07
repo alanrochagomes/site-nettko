@@ -1,25 +1,63 @@
+/* Estilos para a estrutura da página */
+.content-row {
+  margin-bottom: 1rem;
+  background-color: #000f65;
+  border-top: 1px solid #ddd;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: white;
+  background: #212529;
+}
+
+/* Slider - parte importante */
+.slider {
+  display: flex;
+  overflow-x: auto; /* Ativa a rolagem horizontal */
+  scroll-snap-type: x mandatory; /* Suave rolagem alinhada */
+  gap: 0.5rem; /* Espaçamento entre os vídeos */
+  padding-bottom: 1rem; /* Um pouco de espaçamento abaixo dos vídeos */
+}
+
+/* Cada conteúdo de vídeo */
+.content {
+  scroll-snap-align: start; /* Alinha cada vídeo ao início na rolagem */
+  flex: 0 0 auto; /* Mantém os vídeos com tamanho fixo sem encolher */
+}
+
+/* Estilização do iframe */
+iframe {
+  width: 341px;
+  height: 192px;
+  border-radius: 8px; /* Canto arredondado opcional */
+  border: none;
+}
+
 .content-row {
   margin: 3vw 0;
-  padding: 0 4%;
+  padding: 1 5%;
   gap: 0.5vw;
 }
 
-.content {
+/* .content {
   width: 16vw;
   display: inline-block;
   margin-right: 10px;
-}
+} */
 
 .content img {
   max-width: 100%;
   cursor: pointer;
 }
 
-.slider {
+/* .slider {
   overflow-x: scroll;
   white-space: nowrap;
   display: inline-block;
-}
+} */
 
 .rank {
   height: 150px;
