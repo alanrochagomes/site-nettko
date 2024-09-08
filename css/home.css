@@ -1,0 +1,120 @@
+/* General Styles */
+
+body {
+  background-color: #212529;
+  color: #ffffff;
+}
+
+/* Navbar */
+
+.navbar-brand img {
+  width: 50px;
+  border-radius: 15px;
+}
+
+.nav-link {
+  color: aliceblue;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #1964fd;
+}
+
+.navbar-toggler {
+  background-color: #212529; /* Cor de fundo do botão */
+  border-color: #212529; /* Cor da borda do botão */
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%231964fd' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border-color: white;
+}
+
+/* Main */
+
+main {
+  margin-top: 5rem;
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+/* Carousel */
+
+.carousel-item {
+  height: 500px;
+  position: relative;
+}
+
+.carousel-item iframe {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-item::before {
+  content: "";
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(transparent, rgba(31, 31, 31, 0.7));
+  position: absolute;
+  bottom: 0;
+}
+
+/* Content Row */
+
+.content-row {
+  margin-bottom: 1rem;
+  background-color: #000f65;
+  border-top: 1px solid #ddd;
+  padding: 2rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+  color: var(--bs-card-color);
+}
+
+iframe {
+  width: 100%;
+  height: 192px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Footer */
+
+footer {
+  background-color: #212529;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer img {
+  width: 80px;
+  border-radius: 15px;
+}
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+  .content-row .col-sm-6 {
+    width: 100%;
+  }
+}

@@ -14,147 +14,189 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/videos.css">
-    <link rel="stylesheet" href="css/playlists.css">
-    <link rel="stylesheet" href="css/content-row.css">
+    <link rel="stylesheet" href="css/playlists.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <title>theNettko</title>
   </head>
 
   <body class="bg-dark">
-    <div class="nome text-center">
-      <h1></h1>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-ora">
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./img/profile-nettko.jpg" alt="" class="img-profile"></a>
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo.jpg" alt="Logotipo Nettko" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul
-            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-            style="--bs-scroll-height: 100px"
-          >
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./home.html">Inicio</a>
-            </li>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./home.html"
+                >Início</a
+              >
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="./videos.html">Videos</a>
             </li>
-
-            <li class="nav-item"></li>
+            <li class="nav-item">
               <a class="nav-link" href="./playlists.html">Playlists</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="./lives.html">Lives</a>
             </li>
-
-            <li class="nav-item"></li>
-              <a class="nav-link" href="https://www.youtube.com/@Nettko/featured" target="_blank">Youtube</a>
-            </li>
-            
             <li class="nav-item">
               <a class="nav-link" href="./seja-membro.html">Seja membro</a>
             </li>
-
-            <li class="nav-item"></li>
-            <a class="nav-link" href="./sobre.html">Sobre</a>
-          </li>
-
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre Nós</a>
+            </li>
           </ul>
-         
         </div>
       </div>
     </nav>
 
-    <br /><br />
+    <br /><br /><br /><br /><br />
 
-    <div class="container text-light" id="videos">
-      <h2>PlayLists</h2>
-      <a href="https://www.youtube.com/@Nettko/playlists">+ Playlists</a>
-    </div>
-    
-    <div class="content-row column">
-      <div class="title">Assassin's Creed Valhalla</div>
-      <div class="slider">
-        <div class="content">
-          <iframe   width="341" height="192"  src="https://www.youtube.com/embed/Wy_TSJIKdq0?si=UspfxVubCwfQyJr2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+    <div class="container text-light" id="playlists">
+      <h2>Playlists</h2>
+      <a
+        href="https://www.youtube.com/@Nettko/playlists"
+        class="btn btn-info mb-4"
+        >+ Playlists</a
+      >
+
+      <div class="accordion" id="accordionPlaylists">
+        <!-- Playlist 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Assassin's Creed Valhalla
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionPlaylists"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <iframe
+                    width="100%"
+                    height="auto"
+                    src="https://www.youtube.com/embed/Wy_TSJIKdq0"
+                    title="YouTube video player"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <iframe
+                    width="100%"
+                    height="auto"
+                    src="https://www.youtube.com/embed/vxwt3n7VBfU"
+                    title="YouTube video player"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <iframe
+                    width="100%"
+                    height="auto"
+                    src="https://www.youtube.com/embed/g6E0jshwsac"
+                    title="YouTube video player"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <!-- Adicione mais vídeos aqui -->
+              </div>
+            </div>
+          </div>
         </div>
-    
-        <div class="content">
-          <iframe  width="341" height="192" src="https://www.youtube.com/embed/rNEra09Lkyc?si=IQ9P2cdu9mNwdSWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        
-        <div class="content">
-          <iframe  width="341" height="192" src="https://www.youtube.com/embed/rNEra09Lkyc?si=IQ9P2cdu9mNwdSWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="content">
-          <iframe  width="341" height="192" src="https://www.youtube.com/embed/rNEra09Lkyc?si=IQ9P2cdu9mNwdSWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="content">
-          <iframe  width="341" height="192" src="https://www.youtube.com/embed/rNEra09Lkyc?si=IQ9P2cdu9mNwdSWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="content">
-          <iframe  width="341" height="192" src="https://www.youtube.com/embed/rNEra09Lkyc?si=IQ9P2cdu9mNwdSWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="content">
-          <iframe  width="341" height="192" src="https://www.youtube.com/embed/rNEra09Lkyc?si=IQ9P2cdu9mNwdSWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="content">
-          <iframe  width="341" height="192" src="https://www.youtube.com/embed/rNEra09Lkyc?si=IQ9P2cdu9mNwdSWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <!-- Playlist 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Assassin's Creed III Remastered
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionPlaylists"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <iframe
+                    width="100%"
+                    height="auto"
+                    src="https://www.youtube.com/embed/eULaVtrz6ek"
+                    title="YouTube video player"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <iframe
+                    width="100%"
+                    height="auto"
+                    src="https://www.youtube.com/embed/PUCozvQU1_0"
+                    title="YouTube video player"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <iframe
+                    width="100%"
+                    height="auto"
+                    src="https://www.youtube.com/embed/h7MP4RRtUj8"
+                    title="YouTube video player"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <!-- Adicione mais vídeos aqui -->
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="content-row column">
-      <div class="title">Assassin's Creed III Remastered</div>
-      <div class="slider">
-        <div class="content">
-          <iframe   width="341" height="192"  src="https://www.youtube.com/embed/Wy_TSJIKdq0?si=UspfxVubCwfQyJr2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
-        </div>
-    
-        <div class="content">
-          <iframe  width="341" height="192" src="https://www.youtube.com/embed/rNEra09Lkyc?si=IQ9P2cdu9mNwdSWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        
-        <div class="content">
-          <iframe  width="341" height="192" src="https://www.youtube.com/embed/rNEra09Lkyc?si=IQ9P2cdu9mNwdSWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="content">
-          <iframe  width="341" height="192" src="https://www.youtube.com/embed/rNEra09Lkyc?si=IQ9P2cdu9mNwdSWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="content">
-          <iframe  width="341" height="192" src="https://www.youtube.com/embed/rNEra09Lkyc?si=IQ9P2cdu9mNwdSWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="content">
-          <iframe  width="341" height="192" src="https://www.youtube.com/embed/rNEra09Lkyc?si=IQ9P2cdu9mNwdSWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="content">
-          <iframe  width="341" height="192" src="https://www.youtube.com/embed/rNEra09Lkyc?si=IQ9P2cdu9mNwdSWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="content">
-          <iframe  width="341" height="192" src="https://www.youtube.com/embed/rNEra09Lkyc?si=IQ9P2cdu9mNwdSWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-
-    </div>
-</div>
-
-
-  </div>
-   </div>
-    </div>
-  </div>
-</div>
+    <!-- Footer -->
+    <footer class="text-center bg-dark p-5 mt-5">
+      <img
+        class=""
+        width="80"
+        src="assets/images/logo.jpg"
+        style="border-radius: 15px"
+        alt="..."
+      />
+      <p class="mt-2 mb-0 text-light fw-bold">© 2024 theNettko.</p>
+    </footer>
+  </body>
+</html>

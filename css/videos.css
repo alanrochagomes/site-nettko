@@ -1,50 +1,29 @@
-.container-videos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 vídeos por linha */
-  gap: 0.5rem; /* Diminui o espaço entre os vídeos */
+/* Estilo para o container de vídeos */
+.content-row {
+  margin-top: 2rem;
 }
 
-.videos {
-  width: 100%; /* Para garantir que os vídeos se ajustem à largura da coluna */
-  height: auto; /* Ajusta a altura de forma proporcional */
+/* Estilo para os iframes de vídeo */
+iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 8px; /* Adicionado para consistência com outros estilos */
+  object-fit: cover; /* Adicionado para ajuste da imagem do vídeo */
 }
 
-/* Para telas menores, ajuste o número de colunas */
-@media (max-width: 1200px) {
-  .container-videos {
-    grid-template-columns: repeat(
-      3,
-      1fr
-    ); /* 3 vídeos por linha em telas médias */
+/* Espaçamento entre os vídeos */
+.gx-4 {
+  --bs-gutter-x: 1.5rem; /* Espaçamento horizontal entre colunas */
+}
+
+.gy-4 {
+  --bs-gutter-y: 1.5rem; /* Espaçamento vertical entre colunas */
+}
+
+/* Para telas pequenas, garantir responsividade */
+@media (max-width: 768px) {
+  iframe {
+    height: 150px; /* Altura ajustada para telas menores */
   }
-}
-
-@media (max-width: 900px) {
-  .container-videos {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* 2 vídeos por linha em telas menores */
-  }
-}
-
-@media (max-width: 600px) {
-  .container-videos {
-    grid-template-columns: 1fr; /* 1 vídeo por linha em telas muito pequenas */
-  }
-}
-
-/* ==================== PlayLists =================== */
-
-.container-playlists {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Espaçamento automático entre os cards */
-  gap: 0.5rem; /* Espaço entre os cards */
-  flex-wrap: wrap; /* Quebra para uma nova linha se necessário */
-}
-
-.card {
-  width: 100%; /* Para garantir que os vídeos se ajustem à largura da coluna */
-  height: auto; /* Ajusta a altura de forma proporcional */
 }
