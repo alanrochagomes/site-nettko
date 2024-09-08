@@ -14,9 +14,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="icon" href="assets/images/logo.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="css/videos.css" />
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="icon" href="../assets/images/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/videos.css" />
+    <link rel="stylesheet" href="../css/home.css" />
     <title>theNettko</title>
   </head>
   <body class="bg-dark">
@@ -31,7 +31,11 @@
           href="https://www.youtube.com/@Nettko"
           target="_blank"
         >
-          <img src="assets/images/logo.jpg" alt="Logotipo Nettko" width="150" />
+          <img
+            src="../assets/images/logo.jpg"
+            alt="Logotipo Nettko"
+            width="150"
+          />
         </a>
         <button
           class="navbar-toggler"
@@ -47,24 +51,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./home.html"
+              <a class="nav-link active" aria-current="page" href="../home.html"
                 >Início</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./videos.html">Vídeos</a>
+              <a class="nav-link" href="../pages/videos.html">Vídeos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./playlists.html">Playlists</a>
+              <a class="nav-link" href="../pages/playlists.html">Playlists</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./lives.html">Lives</a>
+              <a class="nav-link" href="../pages/lives.html">Lives</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./seja-membro.html">Seja Membro</a>
+              <a class="nav-link" href="../pages/seja-membro.html"
+                >Seja Membro</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./sobre.html">Sobre Nós</a>
+              <a class="nav-link" href="../pages/sobre.html">Sobre Nós</a>
             </li>
           </ul>
         </div>
@@ -122,7 +128,7 @@
       <img
         class=""
         width="80"
-        src="assets/images/logo.jpg"
+        src="../assets/images/logo.jpg"
         style="border-radius: 15px"
         alt="..."
       />
@@ -146,7 +152,7 @@
         }
 
         contentRow.addEventListener("scroll", checkScroll);
-        checkScroll(); // Verifica a posição de rolagem ao carregar
+        checkScroll();
       });
     </script>
   </body>
