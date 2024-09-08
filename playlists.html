@@ -14,6 +14,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="icon" href="assets/images/logo.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="css/playlists.css" />
     <link rel="stylesheet" href="css/home.css" />
     <title>theNettko</title>
@@ -96,35 +97,40 @@
             data-bs-parent="#accordionPlaylists"
           >
             <div class="accordion-body">
-              <div class="row">
-                <div class="col-md-4 mb-3">
-                  <iframe
-                    width="100%"
-                    height="auto"
-                    src="https://www.youtube.com/embed/Wy_TSJIKdq0"
-                    title="YouTube video player"
-                    allowfullscreen
-                  ></iframe>
+              <div class="scroll-container">
+                <div class="scroll-content row">
+                  <div class="col-md-4 mb-3">
+                    <iframe
+                      width="100%"
+                      height="auto"
+                      src="https://www.youtube.com/embed/Wy_TSJIKdq0"
+                      title="YouTube video player"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <iframe
+                      width="100%"
+                      height="auto"
+                      src="https://www.youtube.com/embed/vxwt3n7VBfU"
+                      title="YouTube video player"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <iframe
+                      width="100%"
+                      height="auto"
+                      src="https://www.youtube.com/embed/g6E0jshwsac"
+                      title="YouTube video player"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <!-- Adicione mais vídeos aqui -->
                 </div>
-                <div class="col-md-4 mb-3">
-                  <iframe
-                    width="100%"
-                    height="auto"
-                    src="https://www.youtube.com/embed/vxwt3n7VBfU"
-                    title="YouTube video player"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <iframe
-                    width="100%"
-                    height="auto"
-                    src="https://www.youtube.com/embed/g6E0jshwsac"
-                    title="YouTube video player"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-                <!-- Adicione mais vídeos aqui -->
+              </div>
+              <div class="scroll-indicator">
+                <span>↘️ Scroll para ver mais</span>
               </div>
             </div>
           </div>
@@ -151,35 +157,40 @@
             data-bs-parent="#accordionPlaylists"
           >
             <div class="accordion-body">
-              <div class="row">
-                <div class="col-md-4 mb-3">
-                  <iframe
-                    width="100%"
-                    height="auto"
-                    src="https://www.youtube.com/embed/eULaVtrz6ek"
-                    title="YouTube video player"
-                    allowfullscreen
-                  ></iframe>
+              <div class="scroll-container">
+                <div class="scroll-content row">
+                  <div class="col-md-4 mb-3">
+                    <iframe
+                      width="100%"
+                      height="auto"
+                      src="https://www.youtube.com/embed/eULaVtrz6ek"
+                      title="YouTube video player"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <iframe
+                      width="100%"
+                      height="auto"
+                      src="https://www.youtube.com/embed/PUCozvQU1_0"
+                      title="YouTube video player"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <iframe
+                      width="100%"
+                      height="auto"
+                      src="https://www.youtube.com/embed/h7MP4RRtUj8"
+                      title="YouTube video player"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <!-- Adicione mais vídeos aqui -->
                 </div>
-                <div class="col-md-4 mb-3">
-                  <iframe
-                    width="100%"
-                    height="auto"
-                    src="https://www.youtube.com/embed/PUCozvQU1_0"
-                    title="YouTube video player"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <iframe
-                    width="100%"
-                    height="auto"
-                    src="https://www.youtube.com/embed/h7MP4RRtUj8"
-                    title="YouTube video player"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-                <!-- Adicione mais vídeos aqui -->
+              </div>
+              <div class="scroll-indicator">
+                <span>↘️ Scroll para ver mais</span>
               </div>
             </div>
           </div>
@@ -198,5 +209,28 @@
       />
       <p class="mt-2 mb-0 text-light fw-bold">© 2024 theNettko.</p>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollContainers = document.querySelectorAll(".scroll-container");
+        const scrollIndicators = document.querySelectorAll(".scroll-indicator");
+
+        scrollContainers.forEach((container, index) => {
+          const checkScroll = () => {
+            const contentWidth = container.scrollWidth;
+            const scrollPosition = container.scrollLeft + container.clientWidth;
+
+            if (scrollPosition >= contentWidth - 10) {
+              scrollIndicators[index].style.display = "none";
+            } else {
+              scrollIndicators[index].style.display = "block";
+            }
+          };
+
+          container.addEventListener("scroll", checkScroll);
+          checkScroll(); // Verifica a posição de rolagem ao carregar
+        });
+      });
+    </script>
   </body>
 </html>
