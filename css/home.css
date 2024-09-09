@@ -118,3 +118,26 @@ footer img {
     width: 100%;
   }
 }
+
+/* Custom Scrollbar for WebKit browsers */
+.custom-scroll {
+  overflow: auto;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 12px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #1f1f1f; /* Dark background for the scrollbar track */
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #555; /* Darker thumb */
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Lighten thumb on hover */
+}
